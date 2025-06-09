@@ -9,134 +9,6 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  22.59 kB | 
-styles.css           | styles           |  95 bytes | 
-
-                     | Initial total    | 112.88 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [4.644 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.401 seconds]
-
-✘ [ERROR] NG8001: 'streakflow-dashboard' is not a known element:
-1. If 'streakflow-dashboard' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
-2. If 'streakflow-dashboard' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
-
-    src/app/app.component.ts:9:8:
-      9 │         <streakflow-dashboard />
-        ╵         ~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.211 seconds]
-
-✘ [ERROR] NG8001: 'streakflow-dashboard' is not a known element:
-1. If 'streakflow-dashboard' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
-2. If 'streakflow-dashboard' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
-
-    src/app/app.component.ts:9:8:
-      9 │         <streakflow-dashboard />
-        ╵         ~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.596 seconds]
-
-▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:35:14:
-      35 │         <div *ngIf="habits.length === 0" class="sf-empty-state">No...
-         ╵               ~~~~
-
-
-▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:37:25:
-      37 │           <ng-container *ngFor="let habit of habits; trackBy: trac...
-         ╵                          ~~~~~
-
-
-▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:58:31:
-      58 │                 <ng-container *ngFor="let completed of habit.calen...
-         ╵                                ~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:24:12:
-      24 │             [(ngModel)]="habitInput"
-         ╵             ~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:61:20:
-      61 │ ...          [ngClass]="{ 'filled': completed, 'today': day === to...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.455 seconds]
-
-▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:35:14:
-      35 │         <div *ngIf="habits.length === 0" class="sf-empty-state">No...
-         ╵               ~~~~
-
-
-▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:37:25:
-      37 │           <ng-container *ngFor="let habit of habits; trackBy: trac...
-         ╵                          ~~~~~
-
-
-▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:58:31:
-      58 │                 <ng-container *ngFor="let completed of habit.calen...
-         ╵                                ~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:24:12:
-      24 │             [(ngModel)]="habitInput"
-         ╵             ~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'span'. [plugin angular-compiler]
-
-    src/app/streakflow-dashboard.component.ts:61:20:
-      61 │ ...          [ngClass]="{ 'filled': completed, 'today': day === to...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
 main.js              | main             |  17.13 kB | 
 styles.css           | styles           |  95 bytes | 
 
@@ -150,8 +22,26 @@ chunk-TE3YAMHT.mjs   | -                |  17.57 kB |
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [0.551 seconds]
+Application bundle generation complete. [3.015 seconds]
 
-4:02:17 PM [vite] (ssr) ✨ new dependencies optimized: @angular/forms
-4:02:17 PM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+4:02:40 PM [vite] (client) Re-optimizing dependencies because vite config has changed
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  20.05 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-XHGGAX6T.mjs  | -           |  20.48 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [1.493 seconds]
+
 Page reload sent to client(s).
