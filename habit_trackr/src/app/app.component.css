@@ -1,0 +1,20 @@
+/* StreakFlow App Pastel Background and Centering */
+.streakflow-app-bg {
+  min-height: 100vh;
+  background: linear-gradient(118deg, #feeef9 0%, #e2f3fa 80%, #e7fde5 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered Card Container */
+.streakflow-centered-container {
+  width: 100%;
+  max-width: 1020px;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}

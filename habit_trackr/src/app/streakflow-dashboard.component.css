@@ -1,0 +1,233 @@
+.sf-dashboard-root {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem 1.5rem;
+  background: #fff9fc;
+  border-radius: 2.5rem;
+  box-shadow: 0 4px 24px 0 rgba(155, 165, 195, 0.16);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #85b6d9;
+  letter-spacing: -1px;
+  margin-bottom: 0.3rem;
+  font-family: "Inter Tight", "Inter", Arial, sans-serif;
+}
+.subtitle {
+  color: #b48893;
+  font-size: 1.04rem;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+.sf-add-habit-card {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 2rem;
+  box-shadow: 0 2px 16px 0 rgba(130, 160, 210, 0.07);
+  padding: 1.25rem 1.3rem 1rem 1.3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  background: #ffe9ef;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.sf-add-habit-card form {
+  width: 100%;
+  display: flex;
+  gap: 0.55rem;
+}
+.sf-add-habit-card input[type="text"] {
+  border-radius: 1.25rem;
+  border: 1px solid #e1cee7;
+  padding: 0.52rem 1.1rem;
+  font-size: 1.08rem;
+  background: #fff;
+  outline: none;
+  width: 76%;
+  font-family: inherit;
+  color: #625678;
+}
+.sf-add-habit-card button[type="submit"] {
+  background: #c6f0d7;
+  color: #456c5d;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.48rem 1.17rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px 0 rgba(130,200,160, 0.12);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.sf-add-habit-card button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.sf-habits-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+  gap: 2rem 1.5rem;
+  margin-top: 0.5rem;
+  justify-items: center;
+}
+.sf-habit-card {
+  background: #eaf6fe;
+  border-radius: 2rem;
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+  box-shadow: 0 4px 20px 0 rgba(116, 160, 200, 0.10);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 253px;
+  max-width: 350px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+}
+.habit-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #549ea0;
+  letter-spacing: -0.3px;
+  word-break: break-word;
+}
+.delete-btn {
+  font-size: 1.3rem;
+  border: none;
+  background: transparent;
+  color: #e56a82;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 2.05rem;
+  height: 2.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.16s;
+}
+.delete-btn:hover {
+  background: #fee2eb;
+}
+.streak-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.13rem;
+  margin-top: 0.45rem;
+}
+.streak-count {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #589ad6;
+  margin-bottom: -0.23rem;
+}
+.streak-label {
+  font-size: 0.98rem;
+  color: #75ab99;
+  font-weight: 400;
+}
+.longest-streak {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.30rem;
+  color: #c891b1;
+  font-size: 1.07rem;
+  font-weight: 500;
+}
+.longest-label {
+  font-size: 0.95rem;
+  color: #bf8aa1;
+  font-weight: 400;
+}
+.mark-btn {
+  border: none;
+  border-radius: 1.25rem;
+  background: #c6f0d7;
+  color: #2b4f4d;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  padding: 0.53rem 1.1rem;
+  font-size: 1.02rem;
+  box-shadow: 0 2px 6px 0 rgba(130,180,160, 0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.mark-btn:disabled {
+  background: #e9eafa;
+  color: #babccc;
+  cursor: default;
+}
+.sf-cal-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.5rem;
+}
+.sf-cal-dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #f2f5f7;
+  box-shadow: 0 1px 2px 0 #daebef2c;
+  margin-right: 0.12rem;
+  margin-left: 0.03rem;
+  border: 1.5px solid #e6ddff;
+  display: inline-block;
+  transition: background 0.25s, border 0.22s;
+  position: relative;
+}
+.sf-cal-dot.filled {
+  background: #b2ebc5;
+  border-color: #83c9ad;
+}
+.sf-cal-dot.today {
+  outline: 2px solid #bee3fa;
+  outline-offset: 1.5px;
+}
+.calendar-label {
+  font-size: 0.98rem;
+  color: #ba8dac;
+  font-weight: 500;
+  margin-left: 0.29rem;
+}
+.sf-empty-state {
+  padding: 2.1rem 0;
+  font-size: 1.12rem;
+  color: #afaecc;
+  text-align: center;
+  font-style: italic;
+}
+/* Pastel color helpers */
+.pastel-pink { background: #ffe9ef !important; }
+.pastel-blue { background: #eaf6fe !important; }
+.pastel-green { background: #c6f0d7 !important; }
+@media (max-width: 675px) {
+  .sf-dashboard-root {
+    padding: 1rem 0.3rem 1.5rem 0.3rem;
+    border-radius: 1.2rem;
+  }
+  .sf-add-habit-card, .sf-habit-card { border-radius: 1.2rem; }
+  .sf-habits-grid {
+    gap: 1.07rem 0.3rem;
+  }
+}

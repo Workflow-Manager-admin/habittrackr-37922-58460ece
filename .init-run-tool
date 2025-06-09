@@ -1,0 +1,4 @@
+{
+    "command": "npm start -- --port <port>",
+    "working_directory": "/home/kavia/workspace/code-generation/habittrackr-37922-58460ece/habit_trackr"
+}
